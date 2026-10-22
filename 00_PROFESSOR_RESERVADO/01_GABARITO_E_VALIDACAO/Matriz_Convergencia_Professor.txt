@@ -1,0 +1,67 @@
+MATRIZ DE CONVERGÊNCIA - RESERVADA AO PROFESSOR
+SIMULADO - dados criados exclusivamente para a aula
+
+ROOK | alvo de atribuição do roteiro
+SIM-DIS-U101 -> rookthekiss@example.invalid
+203.0.113.45:51234/TCP | 2026-10-22T05:15:00Z
+SIM-NS-A010 -> titular M. R. S. -> pessoa L. R. S. (SIM-DOC-P001)
+Aplicação/conexão: CONFERE | Conexão/diligência: CONFERE | Google/e-mail: CONFERE
+
+CORVO | alvo de atribuição do roteiro
+SIM-DIS-U201 -> contato.familia02@example.invalid
+198.51.100.61:51235/TCP | 2026-10-22T05:21:00Z
+SIM-NS-A020 -> titular C. P. S. -> pessoa D. P. S. (SIM-DOC-P002)
+Aplicação/conexão: CONFERE | Conexão/diligência: CONFERE | Google/e-mail: CONFERE
+
+HADES | alvo de atribuição do roteiro
+SIM-DIS-U301 -> hades.v7@example.invalid
+198.51.100.72:51401/TCP | 2026-10-22T04:55:00Z
+SIM-NS-A030 -> titular A. P. S. -> pessoa J. P. S. (SIM-DOC-P003)
+Aplicação/conexão: CONFERE | Conexão/diligência: CONFERE | Google/e-mail: CONFERE
+
+Zeta | conduta descrita no cenário
+SIM-DIS-U401 -> zeta.n7@example.invalid
+203.0.113.81:51402/TCP | 2026-10-22T05:40:00Z
+SIM-NS-A040 -> titular R. F. A. -> pessoa R. F. A. (SIM-DOC-P004)
+Aplicação/conexão: CONFERE | Conexão/diligência: CONFERE | Google/e-mail: CONFERE
+
+Ghost | conduta descrita no cenário
+SIM-DIS-U501 -> ghost.v7@example.invalid
+203.0.113.82:51403/TCP | 2026-10-22T05:41:00Z
+SIM-NS-A050 -> titular M. C. T. -> pessoa M. C. T. (SIM-DOC-P005)
+Aplicação/conexão: CONFERE | Conexão/diligência: CONFERE | Google/e-mail: CONFERE
+
+Oráculo | conduta descrita no cenário
+SIM-DIS-U601 -> oraculo.n7@example.invalid
+203.0.113.83:51404/TCP | 2026-10-22T05:42:00Z
+SIM-NS-A060 -> titular V. P. L. -> pessoa V. P. L. (SIM-DOC-P006)
+Aplicação/conexão: CONFERE | Conexão/diligência: CONFERE | Google/e-mail: CONFERE
+
+K9 | conduta descrita no cenário
+SIM-DIS-U701 -> k9.v7@example.invalid
+203.0.113.84:51405/TCP | 2026-10-22T05:43:00Z
+SIM-NS-A070 -> titular B. N. A. -> pessoa B. N. A. (SIM-DOC-P007)
+Aplicação/conexão: CONFERE | Conexão/diligência: CONFERE | Google/e-mail: CONFERE
+
+Nox | somente citação em inscrições e hierarquia; conduta não individualizada
+SIM-DIS-U801 -> nox.v7@example.invalid
+203.0.113.85:51406/TCP | 2026-10-22T05:44:00Z
+SIM-NS-A080 -> titular E. Q. L. -> pessoa E. Q. L. (SIM-DOC-P008)
+Aplicação/conexão: CONFERE | Conexão/diligência: CONFERE | Google/e-mail: CONFERE
+
+Vesper | somente citação em inscrições e hierarquia; conduta não individualizada
+SIM-DIS-U901 -> vesper.v7@example.invalid
+203.0.113.86:51407/TCP | 2026-10-22T05:45:00Z
+SIM-NS-A090 -> titular T. S. M. -> pessoa T. S. M. (SIM-DOC-P009)
+Aplicação/conexão: CONFERE | Conexão/diligência: CONFERE | Google/e-mail: CONFERE
+
+Ícaro | somente citação em inscrições e hierarquia; conduta não individualizada
+SIM-DIS-U1001 -> icaro.v7@example.invalid
+203.0.113.87:51408/TCP | 2026-10-22T05:46:00Z
+SIM-NS-A100 -> titular H. V. A. -> pessoa H. V. A. (SIM-DOC-P010)
+Aplicação/conexão: CONFERE | Conexão/diligência: CONFERE | Google/e-mail: CONFERE
+
+ROOK posterior: SIM-DIS-U102 -> mesmo e-mail -> 203.0.113.46:51310/TCP em 2026-11-12T12:40:00Z -> SIM-NS-A010 -> M. R. S. -> L. R. S.
+
+APENAS CITADOS, SEM IDENTIFICAÇÃO INDIVIDUALIZADA: Eclipse, Aster, Rune, Bruma, Talon, Quasar, Vulto, Cobalto
+Não equiparar identificação de conta a autoria de conduta. As 21 contas relacionadas do proativo não são 21 pessoas identificadas.

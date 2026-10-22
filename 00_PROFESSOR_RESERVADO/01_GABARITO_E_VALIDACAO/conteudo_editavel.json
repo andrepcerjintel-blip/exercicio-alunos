@@ -1,0 +1,1301 @@
+[
+  {
+    "code": "A01",
+    "phase": 0,
+    "title": "Informação recebida pelo plantão",
+    "sub": "Mensageria | Fonte F01 | 22/10/2026 | UTC-03:00",
+    "rows": [
+      [
+        "05:50 • Fonte F01",
+        "Vi uma transmissão de madrugada. Estão circulando capturas com NULL7 e VÉRTICE. Mencionaram duas meninas. Não sei confirmar o estado delas. Guardei as telas e o link do canal."
+      ]
+    ],
+    "note": "Somente a denúncia recebida. A resposta do plantão será elaborada pelos alunos. Relato indireto, ainda sem confirmação.",
+    "kind": "chat",
+    "editorial_notes": [],
+    "platform": "WhatsApp",
+    "response_files": [
+      "imagens/A01_Denuncia_Inicial.png"
+    ]
+  },
+  {
+    "code": "A02",
+    "phase": 1,
+    "title": "VÉRTICE • conversa do grupo",
+    "sub": "Chat de grupo | 22/10/2026 | UTC-03:00",
+    "rows": [
+      [
+        "05:14 • K9",
+        "Querem evento hoje?"
+      ],
+      [
+        "05:15 • Enquete",
+        "SIM: 18 votos | NÃO: 9 votos | Total: 27"
+      ],
+      [
+        "05:18 • HADES",
+        "Próximo encontro marcado para 27/10, às 23h. O convite sai pelo canal de retorno."
+      ],
+      [
+        "05:20 • Membro não identificado",
+        "O servidor anterior sumiu. Onde vai ser agora?"
+      ]
+    ],
+    "note": "Enquete e anúncio são fictícios. Internação e identidade de quem votou dependem de confirmação.",
+    "kind": "chat",
+    "editorial_notes": [
+      "Síntese sobre Ghost: publica mensagem celebrando uma morte e alegando que outra adolescente foi internada."
+    ],
+    "platform": "Discord"
+  },
+  {
+    "code": "A03",
+    "phase": 2,
+    "title": "VÉRTICE #RETORNO",
+    "sub": "Canal público de divulgação | 21/10/2026 | UTC-03:00",
+    "rows": [
+      [
+        "23:18 • Administrador",
+        "Hoje tem encontro no NULL7 x VÉRTICE. Convite: https://chat.example.invalid/convite/LUA01"
+      ],
+      [
+        "23:20 • Administrador",
+        "Se o servidor sair do ar, o endereço novo vai aparecer aqui."
+      ]
+    ],
+    "note": "Endereços reservados e não funcionais. Acesso público ao post não torna o servidor privado uma fonte aberta.",
+    "kind": "chat",
+    "editorial_notes": [
+      "Observação: Publicação acessível sem aprovação de administrador no cenário do exercício.",
+      "Dados de coleta: Mensagem SIM-TG-M001 | Canal SIM-TG-C001 | URL https://t.example.invalid/vertice_retorno/001"
+    ],
+    "platform": "Telegram"
+  },
+  {
+    "code": "A04",
+    "phase": 2,
+    "title": "LUA e Zeta • conversa privada",
+    "sub": "Reconstrução didática | 21/10/2026 | UTC-03:00",
+    "rows": [
+      [
+        "23:31 • Zeta",
+        "Você vai entrar na chamada combinada?"
+      ],
+      [
+        "23:33 • LUA",
+        "Não quero mais participar. Estou com medo."
+      ],
+      [
+        "23:36 • LUA",
+        "Eu pedi para vocês pararem. Não autorizo divulgar minhas coisas."
+      ]
+    ],
+    "note": "Diálogo criado para a aula, não extraído de dispositivo. Demonstra resistência e coação alegada; não prova o desfecho.",
+    "kind": "chat",
+    "editorial_notes": [
+      "Síntese sobre Zeta: exerce pressão e ameaça divulgar informações pessoais se ela abandonar a chamada.",
+      "Síntese sobre Zeta: insiste na participação e menciona o envolvimento de outros membros."
+    ],
+    "platform": "Instagram"
+  },
+  {
+    "code": "A05",
+    "phase": 2,
+    "title": "SOL e Ghost • conversa privada",
+    "sub": "Reconstrução didática | 22/10/2026 | UTC-03:00",
+    "rows": [
+      [
+        "02:21 • Ghost",
+        "Entra no canal de voz. Os outros já estão lá."
+      ],
+      [
+        "02:23 • SOL",
+        "Não quero que gravem meu rosto. Quero sair disso."
+      ],
+      [
+        "02:25 • SOL",
+        "Tenho 16 anos. Para de me ameaçar."
+      ],
+      [
+        "02:27 • Ghost",
+        "Zeta está esperando na chamada."
+      ],
+      [
+        "02:28 • SOL",
+        "Não estou bem. Vou desligar."
+      ]
+    ],
+    "note": "O teor foi sintetizado. O pedido de interrupção deve ser considerado na análise do risco e da coação.",
+    "kind": "chat",
+    "editorial_notes": [
+      "Síntese sobre Ghost: usa ameaça de exposição para pressionar a continuidade."
+    ],
+    "platform": "Discord"
+  },
+  {
+    "code": "A06",
+    "phase": 2,
+    "title": "NULL7 x VÉRTICE • sessão de voz",
+    "sub": "Ambiente ilustrativo | 22/10 | 02:40 a 02:47",
+    "rows": [],
+    "note": "Não é transcrição nem vídeo. A referência a LUA não identifica, por si, qual adolescente aparece em cada trecho.",
+    "kind": "chat",
+    "editorial_notes": [
+      "Síntese sobre Zeta: conduz a sessão e solicita gravação.",
+      "Síntese sobre Ghost: pressiona SOL e afirma estar gravando.",
+      "Síntese sobre Oráculo: incentiva a conduta lesiva e menciona inscrições associadas aos grupos em outro episódio atribuído a LUA.",
+      "Síntese sobre K9: incentiva e menciona outro membro que queria coordenar.",
+      "Síntese sobre Zeta: faz referência a uma sessão previamente combinada com LUA.",
+      "Observação: SOL encerra a conexão. O trecho não comprova internação nem o que ocorreu depois."
+    ],
+    "platform": "Discord"
+  },
+  {
+    "code": "A07",
+    "phase": 2,
+    "title": "Coordenação • mensagens posteriores",
+    "sub": "Chat restrito | 22/10/2026 | UTC-03:00",
+    "rows": [
+      [
+        "09:10 • Zeta",
+        "Um delegado entrou em contato comigo nesta manhã."
+      ],
+      [
+        "09:14 • K9",
+        "Os próximos avisos vão pelo canal de retorno."
+      ]
+    ],
+    "note": "O contato policial é mencionado em mensagem posterior à sessão de 02:40; não foi colocado no vídeo da madrugada.",
+    "kind": "chat",
+    "editorial_notes": [
+      "Síntese sobre Ghost: sugere retirar publicações e mudar o ponto de encontro.",
+      "Observação: Não há comprovação, nesta peça, do contato policial alegado ou de exclusão efetiva de dados."
+    ],
+    "platform": "Discord"
+  },
+  {
+    "code": "A08",
+    "phase": 1,
+    "title": "Discord • resposta inicial ROOK",
+    "sub": "Resposta fictícia para exercício | Operação LUA",
+    "rows": [
+      [
+        "mono",
+        "Request reference: SIM-LUA-001\nResponse timestamp: 2026-10-22T19:20:00Z\nServer reference: SIM-DIS-S001"
+      ],
+      [
+        "h",
+        "ROOK"
+      ],
+      [
+        "mono",
+        "User ID: SIM-DIS-U101\nDisplay Name: ROOK\nEmail: rookthekiss@example.invalid\nAccess UTC: 2026-10-22T05:15:00Z\nIP: 203.0.113.45 | Source port: 51234 | TCP"
+      ],
+      [
+        "p",
+        "Initial production for ROOK. Additional accounts are returned separately in A23 after the supplementary request. No voice/video content is included. Receipt of preservation request does not confirm completion."
+      ],
+      [
+        "p",
+        "Fictional training production. Approximate format; SIM identifiers are invalid markers."
+      ]
+    ],
+    "note": "Estrutura ilustrativa. Não reproduz formulário oficial, política de divulgação ou garantia de atendimento do Discord.",
+    "kind": "doc",
+    "platform": "Discord",
+    "response_files": [
+      "imagens/A08.png"
+    ],
+    "canonical_refs": [
+      "ROOK"
+    ]
+  },
+  {
+    "code": "A09",
+    "phase": 3,
+    "title": "NetSul Fibra • registros de conexão dos dez envolvidos",
+    "sub": "Resposta fictícia para exercício | Operação LUA",
+    "rows": [
+      [
+        "p",
+        "Vale do Ipê/UF-X, 23 de outubro de 2026."
+      ],
+      [
+        "p",
+        "À Autoridade Policial do Laboratório CAIRAD"
+      ],
+      [
+        "mono",
+        "REF. OF. SIM-OF-009/2026 | Procedimento SIM-LUA-001"
+      ],
+      [
+        "p",
+        "Em atendimento à consulta, apresentamos as associações cadastrais abaixo. Para cada registro, foram considerados IP público, porta de origem, protocolo TCP e data/hora UTC. Cada assinatura corresponde ao titular cadastral, sem individualizar quem utilizou o acesso."
+      ],
+      [
+        "h",
+        "Resultado ROOK"
+      ],
+      [
+        "mono",
+        "IP: 203.0.113.45 | PORTA: 51234 | TCP\nINSTANTE UTC: 2026-10-22T05:15:00Z\nHORÁRIO LOCAL: 2026-10-22T02:15:00-03:00\nASSINATURA: SIM-NS-A010\nTITULAR: M. R. S. | DOC: SIM-DOC-T001\nLOCALIDADE: Vale do Ipê/UF-X"
+      ],
+      [
+        "h",
+        "Resultado CORVO"
+      ],
+      [
+        "mono",
+        "IP: 198.51.100.61 | PORTA: 51235 | TCP\nINSTANTE UTC: 2026-10-22T05:21:00Z\nHORÁRIO LOCAL: 2026-10-22T02:21:00-03:00\nASSINATURA: SIM-NS-A020\nTITULAR: C. P. S. | DOC: SIM-DOC-T002\nLOCALIDADE: Serra Clara/UF-Z"
+      ],
+      [
+        "h",
+        "Resultado HADES"
+      ],
+      [
+        "mono",
+        "IP: 198.51.100.72 | PORTA: 51401 | TCP\nINSTANTE UTC: 2026-10-22T04:55:00Z\nHORÁRIO LOCAL: 2026-10-22T01:55:00-03:00\nASSINATURA: SIM-NS-A030\nTITULAR: A. P. S. | DOC: SIM-DOC-T003\nLOCALIDADE: Porto Sereno/UF-Z"
+      ],
+      [
+        "h",
+        "Resultado Zeta"
+      ],
+      [
+        "mono",
+        "IP: 203.0.113.81 | PORTA: 51402 | TCP\nINSTANTE UTC: 2026-10-22T05:40:00Z\nHORÁRIO LOCAL: 2026-10-22T02:40:00-03:00\nASSINATURA: SIM-NS-A040\nTITULAR: R. F. A. | DOC: SIM-DOC-P004\nLOCALIDADE: Vila das Pedras/UF-X"
+      ],
+      [
+        "h",
+        "Resultado Ghost"
+      ],
+      [
+        "mono",
+        "IP: 203.0.113.82 | PORTA: 51403 | TCP\nINSTANTE UTC: 2026-10-22T05:41:00Z\nHORÁRIO LOCAL: 2026-10-22T02:41:00-03:00\nASSINATURA: SIM-NS-A050\nTITULAR: M. C. T. | DOC: SIM-DOC-P005\nLOCALIDADE: Lago Azul/UF-Y"
+      ],
+      [
+        "h",
+        "Resultado Oráculo"
+      ],
+      [
+        "mono",
+        "IP: 203.0.113.83 | PORTA: 51404 | TCP\nINSTANTE UTC: 2026-10-22T05:42:00Z\nHORÁRIO LOCAL: 2026-10-22T02:42:00-03:00\nASSINATURA: SIM-NS-A060\nTITULAR: V. P. L. | DOC: SIM-DOC-P006\nLOCALIDADE: Campo da Lua/UF-X"
+      ],
+      [
+        "h",
+        "Resultado K9"
+      ],
+      [
+        "mono",
+        "IP: 203.0.113.84 | PORTA: 51405 | TCP\nINSTANTE UTC: 2026-10-22T05:43:00Z\nHORÁRIO LOCAL: 2026-10-22T02:43:00-03:00\nASSINATURA: SIM-NS-A070\nTITULAR: B. N. A. | DOC: SIM-DOC-P007\nLOCALIDADE: Nova Estação/UF-Y"
+      ],
+      [
+        "h",
+        "Resultado Nox"
+      ],
+      [
+        "mono",
+        "IP: 203.0.113.85 | PORTA: 51406 | TCP\nINSTANTE UTC: 2026-10-22T05:44:00Z\nHORÁRIO LOCAL: 2026-10-22T02:44:00-03:00\nASSINATURA: SIM-NS-A080\nTITULAR: E. Q. L. | DOC: SIM-DOC-P008\nLOCALIDADE: Jardim das Serras/UF-Z"
+      ],
+      [
+        "h",
+        "Resultado Vesper"
+      ],
+      [
+        "mono",
+        "IP: 203.0.113.86 | PORTA: 51407 | TCP\nINSTANTE UTC: 2026-10-22T05:45:00Z\nHORÁRIO LOCAL: 2026-10-22T02:45:00-03:00\nASSINATURA: SIM-NS-A090\nTITULAR: T. S. M. | DOC: SIM-DOC-P009\nLOCALIDADE: Rio das Flores/UF-X"
+      ],
+      [
+        "h",
+        "Resultado Ícaro"
+      ],
+      [
+        "mono",
+        "IP: 203.0.113.87 | PORTA: 51408 | TCP\nINSTANTE UTC: 2026-10-22T05:46:00Z\nHORÁRIO LOCAL: 2026-10-22T02:46:00-03:00\nASSINATURA: SIM-NS-A100\nTITULAR: H. V. A. | DOC: SIM-DOC-P010\nLOCALIDADE: Vila Horizonte/UF-Y"
+      ],
+      [
+        "p",
+        "A pesquisa considerou o instante exato indicado e o correspondente registro de tradução de endereços do cenário fictício. Dados de parentesco ou identificação do usuário não fazem parte deste retorno da prestadora."
+      ],
+      [
+        "p",
+        "Atenciosamente, Gerência de Atendimento a Requisições - NetSul Fibra, prestadora fictícia."
+      ]
+    ],
+    "note": "IP reservado para documentação. A resposta contém somente a associação simulada no instante indicado.",
+    "kind": "doc",
+    "platform": "NetSul Fibra",
+    "response_files": [
+      "imagens/A09.png",
+      "imagens/A09_02.png",
+      "imagens/A09_03.png"
+    ],
+    "canonical_refs": []
+  },
+  {
+    "code": "A10",
+    "phase": 3,
+    "title": "Google • cadastros das contas consultadas",
+    "sub": "Resposta fictícia para exercício | Operação LUA",
+    "rows": [
+      [
+        "mono",
+        "Request reference: SIM-LUA-001\nService: Google Account\nResource: Subscriber Info\nEnd of date range: 2026-10-23T15:00:00Z"
+      ],
+      [
+        "h",
+        "Account ROOK"
+      ],
+      [
+        "mono",
+        "Google Account ID: SIM-GOO-A001\nName: L. R. S.\ne-Mail: rookthekiss@example.invalid\nProvider for Consumer Services: Google LLC"
+      ],
+      [
+        "h",
+        "Account CORVO"
+      ],
+      [
+        "mono",
+        "Google Account ID: SIM-GOO-A002\nName: C. P. S.\ne-Mail: contato.familia02@example.invalid\nProvider for Consumer Services: Google LLC"
+      ],
+      [
+        "h",
+        "Account HADES"
+      ],
+      [
+        "mono",
+        "Google Account ID: SIM-GOO-A003\nName: J. P. S.\ne-Mail: hades.v7@example.invalid\nProvider for Consumer Services: Google LLC"
+      ],
+      [
+        "h",
+        "Account Zeta"
+      ],
+      [
+        "mono",
+        "Google Account ID: SIM-GOO-A004\nName: R. F. A.\ne-Mail: zeta.n7@example.invalid\nProvider for Consumer Services: Google LLC"
+      ],
+      [
+        "h",
+        "Account Ghost"
+      ],
+      [
+        "mono",
+        "Google Account ID: SIM-GOO-A005\nName: M. C. T.\ne-Mail: ghost.v7@example.invalid\nProvider for Consumer Services: Google LLC"
+      ],
+      [
+        "h",
+        "Account Oráculo"
+      ],
+      [
+        "mono",
+        "Google Account ID: SIM-GOO-A006\nName: V. P. L.\ne-Mail: oraculo.n7@example.invalid\nProvider for Consumer Services: Google LLC"
+      ],
+      [
+        "h",
+        "Account K9"
+      ],
+      [
+        "mono",
+        "Google Account ID: SIM-GOO-A007\nName: B. N. A.\ne-Mail: k9.v7@example.invalid\nProvider for Consumer Services: Google LLC"
+      ],
+      [
+        "h",
+        "Account Nox"
+      ],
+      [
+        "mono",
+        "Google Account ID: SIM-GOO-A008\nName: E. Q. L.\ne-Mail: nox.v7@example.invalid\nProvider for Consumer Services: Google LLC"
+      ],
+      [
+        "h",
+        "Account Vesper"
+      ],
+      [
+        "mono",
+        "Google Account ID: SIM-GOO-A009\nName: T. S. M.\ne-Mail: vesper.v7@example.invalid\nProvider for Consumer Services: Google LLC"
+      ],
+      [
+        "h",
+        "Account Ícaro"
+      ],
+      [
+        "mono",
+        "Google Account ID: SIM-GOO-A010\nName: H. V. A.\ne-Mail: icaro.v7@example.invalid\nProvider for Consumer Services: Google LLC"
+      ],
+      [
+        "p",
+        "Names are user-provided. Civil identity, family relationship and account operation are not verified by a subscriber name alone. For ROOK, device associations are in A10B. Twenty Google users on a device are distinct from twenty-one chat accounts in A15."
+      ],
+      [
+        "p",
+        "Fictional training export based on the structure of the supplied reference. Recovery fields not returned in this extract."
+      ]
+    ],
+    "note": "Não afirmar que o Google sempre fornece este tipo de associação. São campos inventados para o exercício.",
+    "kind": "doc",
+    "platform": "Google",
+    "response_files": [
+      "imagens/A10.png",
+      "imagens/A10_02.png"
+    ],
+    "canonical_refs": [
+      "ROOK",
+      "CORVO",
+      "HADES",
+      "Zeta",
+      "Ghost",
+      "Oráculo",
+      "K9",
+      "Nox",
+      "Vesper",
+      "Ícaro"
+    ]
+  },
+  {
+    "code": "A11",
+    "phase": 3,
+    "title": "Meta Instagram • CORVO e Zeta",
+    "sub": "Resposta fictícia para exercício | Operação LUA",
+    "rows": [
+      [
+        "mono",
+        "Request Reference: SIM-LUA-001\nService: Instagram\nProduction date: 2026-10-23T15:00:00Z"
+      ],
+      [
+        "h",
+        "Account CORVO"
+      ],
+      [
+        "mono",
+        "Account Identifier: SIM-IG-U201\nUsername: corvo_retorno\nRegistration Email: contato.familia02@example.invalid\nName Provided: C. P. S.\nAccess UTC: 2026-10-22T05:21:00Z\nIP: 198.51.100.61 | Source Port: 51235 | TCP"
+      ],
+      [
+        "h",
+        "Account Zeta"
+      ],
+      [
+        "mono",
+        "Account Identifier: SIM-IG-U401\nUsername: zeta_null7\nRegistration Email: zeta.n7@example.invalid\nName Provided: R. F. A.\nAccess UTC: 2026-10-22T05:40:00Z\nIP: 203.0.113.81 | Source Port: 51402 | TCP"
+      ],
+      [
+        "h",
+        "CORVO - Username history"
+      ],
+      [
+        "p",
+        "25 username changes in the fictional complete dataset; selected names: corvo01, corvo_volta, corvo_retorno. This response does not interpret the reason for changes."
+      ],
+      [
+        "p",
+        "No cryptocurrency balance or wallet ownership is supplied. Approximate fictional provider format, not an official current template."
+      ]
+    ],
+    "note": "Formato ilustrativo, sem logotipos, assinatura oficial ou promessa de campos disponíveis em pedidos reais.",
+    "kind": "doc",
+    "platform": "Instagram",
+    "response_files": [
+      "imagens/A11.png"
+    ],
+    "canonical_refs": [
+      "CORVO",
+      "Zeta"
+    ]
+  },
+  {
+    "code": "A12",
+    "phase": 3,
+    "title": "Diligência local • qualificações e vínculos revisados",
+    "sub": "Resposta fictícia para exercício | Operação LUA",
+    "rows": [
+      [
+        "mono",
+        "Relatório SIM-RT-014\nProcedimento SIM-LUA-001\nControle: SIM-LUA-001\nEmissão: 24/10/2026"
+      ],
+      [
+        "p",
+        "Retificação e consolidação fictícia para o exercício. Os identificadores pessoais são marcadores inválidos e exclusivos. A confirmação do operador da conta decorre de diligência simulada descrita abaixo, e não de inferência de parentesco pelo provedor."
+      ],
+      [
+        "h",
+        "ROOK"
+      ],
+      [
+        "mono",
+        "PESSOA INDICADA: L. R. S. | IDADE: 17\nDOCUMENTO: SIM-DOC-P001\nCONTA: SIM-DIS-U101\nEMAIL: rookthekiss@example.invalid\nASSINATURA: SIM-NS-A010\nTITULAR: M. R. S. | DOC: SIM-DOC-T001"
+      ],
+      [
+        "p",
+        "Vínculo local: a equipe local registra que L. R. S. utiliza a assinatura de sua mãe M. R. S.. A equipe descreve confirmação simulada do uso da conta junto à pessoa indicada. A afirmação é informação da diligência local; não decorre de um campo de cadastro da plataforma."
+      ],
+      [
+        "h",
+        "CORVO"
+      ],
+      [
+        "mono",
+        "PESSOA INDICADA: D. P. S. | IDADE: 14\nDOCUMENTO: SIM-DOC-P002\nCONTA: SIM-DIS-U201\nEMAIL: contato.familia02@example.invalid\nASSINATURA: SIM-NS-A020\nTITULAR: C. P. S. | DOC: SIM-DOC-T002"
+      ],
+      [
+        "p",
+        "Vínculo local: a equipe local registra que D. P. S. utiliza a assinatura de sua mãe C. P. S.. A equipe descreve confirmação simulada do uso da conta junto à pessoa indicada. A afirmação é informação da diligência local; não decorre de um campo de cadastro da plataforma."
+      ],
+      [
+        "h",
+        "HADES"
+      ],
+      [
+        "mono",
+        "PESSOA INDICADA: J. P. S. | IDADE: 17\nDOCUMENTO: SIM-DOC-P003\nCONTA: SIM-DIS-U301\nEMAIL: hades.v7@example.invalid\nASSINATURA: SIM-NS-A030\nTITULAR: A. P. S. | DOC: SIM-DOC-T003"
+      ],
+      [
+        "p",
+        "Vínculo local: a equipe local registra que J. P. S. utiliza a assinatura do avô A. P. S.. A equipe descreve confirmação simulada do uso da conta junto à pessoa indicada. A afirmação é informação da diligência local; não decorre de um campo de cadastro da plataforma."
+      ],
+      [
+        "h",
+        "Zeta"
+      ],
+      [
+        "mono",
+        "PESSOA INDICADA: R. F. A. | IDADE: 19\nDOCUMENTO: SIM-DOC-P004\nCONTA: SIM-DIS-U401\nEMAIL: zeta.n7@example.invalid\nASSINATURA: SIM-NS-A040\nTITULAR: R. F. A. | DOC: SIM-DOC-P004"
+      ],
+      [
+        "p",
+        "Vínculo local: titular e pessoa indicada têm os mesmos dados no cadastro fictício. A equipe descreve confirmação simulada do uso da conta junto à pessoa indicada. A afirmação é informação da diligência local; não decorre de um campo de cadastro da plataforma."
+      ],
+      [
+        "h",
+        "Ghost"
+      ],
+      [
+        "mono",
+        "PESSOA INDICADA: M. C. T. | IDADE: 18\nDOCUMENTO: SIM-DOC-P005\nCONTA: SIM-DIS-U501\nEMAIL: ghost.v7@example.invalid\nASSINATURA: SIM-NS-A050\nTITULAR: M. C. T. | DOC: SIM-DOC-P005"
+      ],
+      [
+        "p",
+        "Vínculo local: titular e pessoa indicada têm os mesmos dados no cadastro fictício. A equipe descreve confirmação simulada do uso da conta junto à pessoa indicada. A afirmação é informação da diligência local; não decorre de um campo de cadastro da plataforma."
+      ],
+      [
+        "h",
+        "Oráculo"
+      ],
+      [
+        "mono",
+        "PESSOA INDICADA: V. P. L. | IDADE: 20\nDOCUMENTO: SIM-DOC-P006\nCONTA: SIM-DIS-U601\nEMAIL: oraculo.n7@example.invalid\nASSINATURA: SIM-NS-A060\nTITULAR: V. P. L. | DOC: SIM-DOC-P006"
+      ],
+      [
+        "p",
+        "Vínculo local: titular e pessoa indicada têm os mesmos dados no cadastro fictício. A equipe descreve confirmação simulada do uso da conta junto à pessoa indicada. A afirmação é informação da diligência local; não decorre de um campo de cadastro da plataforma."
+      ],
+      [
+        "h",
+        "K9"
+      ],
+      [
+        "mono",
+        "PESSOA INDICADA: B. N. A. | IDADE: 18\nDOCUMENTO: SIM-DOC-P007\nCONTA: SIM-DIS-U701\nEMAIL: k9.v7@example.invalid\nASSINATURA: SIM-NS-A070\nTITULAR: B. N. A. | DOC: SIM-DOC-P007"
+      ],
+      [
+        "p",
+        "Vínculo local: titular e pessoa indicada têm os mesmos dados no cadastro fictício. A equipe descreve confirmação simulada do uso da conta junto à pessoa indicada. A afirmação é informação da diligência local; não decorre de um campo de cadastro da plataforma."
+      ],
+      [
+        "h",
+        "Nox"
+      ],
+      [
+        "mono",
+        "PESSOA INDICADA: E. Q. L. | IDADE: 19\nDOCUMENTO: SIM-DOC-P008\nCONTA: SIM-DIS-U801\nEMAIL: nox.v7@example.invalid\nASSINATURA: SIM-NS-A080\nTITULAR: E. Q. L. | DOC: SIM-DOC-P008"
+      ],
+      [
+        "p",
+        "Vínculo local: titular e pessoa indicada têm os mesmos dados no cadastro fictício. A equipe descreve confirmação simulada do uso da conta junto à pessoa indicada. A afirmação é informação da diligência local; não decorre de um campo de cadastro da plataforma."
+      ],
+      [
+        "h",
+        "Vesper"
+      ],
+      [
+        "mono",
+        "PESSOA INDICADA: T. S. M. | IDADE: 18\nDOCUMENTO: SIM-DOC-P009\nCONTA: SIM-DIS-U901\nEMAIL: vesper.v7@example.invalid\nASSINATURA: SIM-NS-A090\nTITULAR: T. S. M. | DOC: SIM-DOC-P009"
+      ],
+      [
+        "p",
+        "Vínculo local: titular e pessoa indicada têm os mesmos dados no cadastro fictício. A equipe descreve confirmação simulada do uso da conta junto à pessoa indicada. A afirmação é informação da diligência local; não decorre de um campo de cadastro da plataforma."
+      ],
+      [
+        "h",
+        "Ícaro"
+      ],
+      [
+        "mono",
+        "PESSOA INDICADA: H. V. A. | IDADE: 20\nDOCUMENTO: SIM-DOC-P010\nCONTA: SIM-DIS-U1001\nEMAIL: icaro.v7@example.invalid\nASSINATURA: SIM-NS-A100\nTITULAR: H. V. A. | DOC: SIM-DOC-P010"
+      ],
+      [
+        "p",
+        "Vínculo local: titular e pessoa indicada têm os mesmos dados no cadastro fictício. A equipe descreve confirmação simulada do uso da conta junto à pessoa indicada. A afirmação é informação da diligência local; não decorre de um campo de cadastro da plataforma."
+      ],
+      [
+        "p",
+        "HADES: a notícia de ocorrência escolar anterior e apreensão de celular permanece sem laudo anexado. Não constitui prova de participação no evento atual."
+      ],
+      [
+        "p",
+        "Zeta, Ghost, Oráculo e K9 têm condutas descritas na sessão A06. Nox, Vesper e Ícaro estão individualizados apenas como contas e pessoas citadas: nenhuma conduta específica na sessão foi acrescentada. ROOK, CORVO e HADES permanecem os três alvos centrais do roteiro."
+      ]
+    ],
+    "note": "Dados recebidos para revisão crítica. Os documentos são marcadores inválidos; não existem CPFs reais no material.",
+    "kind": "doc",
+    "platform": "Polícia local",
+    "response_files": [
+      "imagens/A12.png",
+      "imagens/A12_02.png",
+      "imagens/A12_03.png",
+      "imagens/A12_04.png"
+    ],
+    "canonical_refs": [
+      "ROOK",
+      "CORVO",
+      "HADES",
+      "Zeta",
+      "Ghost",
+      "Oráculo",
+      "K9",
+      "Nox",
+      "Vesper",
+      "Ícaro"
+    ]
+  },
+  {
+    "code": "A13",
+    "phase": 2,
+    "title": "Telegram • resposta de escopo limitado",
+    "sub": "Resposta fictícia para exercício | Operação LUA",
+    "rows": [
+      [
+        "mono",
+        "Request Reference: SIM-LUA-001\nChannel Reference: SIM-TG-C001\nMessage Reference: SIM-TG-M001"
+      ],
+      [
+        "p",
+        "Receipt of the referenced request is acknowledged."
+      ],
+      [
+        "p",
+        "No subscriber information, administrator IP addresses or private message content is included in this acknowledgement."
+      ],
+      [
+        "p",
+        "This acknowledgement does not confirm completion of preservation or disclosure. The request remains pending review in this fictional exercise."
+      ],
+      [
+        "p",
+        "Fictional training correspondence. An original Telegram reply was not available as a format reference. This page is an approximate model only."
+      ]
+    ],
+    "note": "Resposta deliberadamente limitada. Não representa a política atual nem o resultado provável de pedido ao Telegram.",
+    "kind": "doc",
+    "platform": "Telegram",
+    "response_files": [
+      "imagens/A13.png"
+    ]
+  },
+  {
+    "code": "A14",
+    "phase": 4,
+    "title": "VÉRTICE #RETORNO • estrutura",
+    "sub": "Publicação do canal | 24/10/2026 | UTC-03:00",
+    "rows": [
+      [
+        "20:00 • Administrador",
+        "Donos: K9, Ghost, HADES."
+      ],
+      [
+        "20:01 • Administrador",
+        "Subdonos: Eclipse e Aster. Administradores: Nox, Vesper, Ícaro e Rune."
+      ],
+      [
+        "20:02 • Administrador",
+        "Expulsos: Bruma, Talon, Quasar, Vulto e Cobalto."
+      ],
+      [
+        "20:03 • Administrador",
+        "Encontros semanais. Próximo anúncio no canal."
+      ]
+    ],
+    "note": "Autodeclaração de hierarquia. Distinguir estrutura anunciada, vínculo de conta e atuação individual comprovada.",
+    "kind": "chat",
+    "editorial_notes": [
+      "Observação: A publicação não esclarece funções de ROOK e CORVO nem demonstra quem exerce efetivamente cada papel."
+    ],
+    "platform": "Telegram"
+  },
+  {
+    "code": "A15",
+    "phase": 4,
+    "title": "Discord • proativo posterior simulado",
+    "sub": "Resposta fictícia para exercício | Operação LUA",
+    "rows": [
+      [
+        "mono",
+        "Referral Date: 2026-11-12 13:00:00 UTC\nAccount ID: SIM-DIS-U102\nDisplay Name: ROOK\nEmail: rookthekiss@example.invalid"
+      ],
+      [
+        "h",
+        "Recent Access"
+      ],
+      [
+        "mono",
+        "Timestamp (UTC): 2026-11-12 12:40:00\nIP Address: 203.0.113.46\nSource Port: 51310\nProtocol: TCP"
+      ],
+      [
+        "h",
+        "Related Accounts"
+      ],
+      [
+        "p",
+        "21 accounts in the fictional dataset SIM-REL-021. Hypothetical association criterion: matching recovery email. No automatic link to the Google device data is asserted."
+      ],
+      [
+        "h",
+        "Reported Content"
+      ],
+      [
+        "p",
+        "[Síntese didática em português: usuário afirma que o ingresso no grupo exige evento com automutilação ou suicídio.]"
+      ],
+      [
+        "p",
+        "Fictional training referral. This approximate format is not an official provider template. The reported association must be examined against its underlying technical basis."
+      ]
+    ],
+    "note": "Nova peça fictícia. Não tratar automaticamente como corroboração independente nem confundir 20 contas Google com 21 contas de chat.",
+    "kind": "doc",
+    "platform": "Discord",
+    "response_files": [
+      "imagens/A15.png"
+    ]
+  },
+  {
+    "code": "A16",
+    "phase": 4,
+    "title": "Perícia local • vestígio e limites",
+    "sub": "Resposta fictícia para exercício | Operação LUA",
+    "rows": [
+      [
+        "Referência",
+        "SIM-PER-001 | vítima LUA | comunicação preliminar fictícia"
+      ],
+      [
+        "Achado",
+        "Objeto com inscrição NULL7 e cinco apelidos: Zeta, Oráculo, Nox, Vesper e Ícaro."
+      ],
+      [
+        "Documentação",
+        "Laudo, local exato de encontro e histórico de manuseio não integram esta peça. A17 a A22 são ilustrações complementares da simulação, sem valor de fotografia pericial."
+      ],
+      [
+        "Limites",
+        "Inscrição não prova autoria do objeto, participação em chamada, presença física, causalidade ou comando por pessoa específica."
+      ],
+      [
+        "Diligências",
+        "Solicitar documentação pericial, preservar o dispositivo da vítima e confrontar identificadores com os registros efetivamente disponíveis."
+      ]
+    ],
+    "note": "Descrição não gráfica. Nenhuma imagem real ou simulada de lesão, corpo ou método foi utilizada.",
+    "kind": "doc",
+    "platform": "Perícia local"
+  },
+  {
+    "code": "A10B",
+    "phase": 3,
+    "title": "Google • Android Device Configuration Service",
+    "sub": "Extrato técnico fictício",
+    "rows": [
+      [
+        "h",
+        "Device and Account Identifiers"
+      ],
+      [
+        "mono",
+        "Android ID: SIM-DEV-020\nMEID(s): Not included\nIMEI(s): SIM-IMEI-020\nESN(s): Not included\nSerial Number(s): SIM-SERIAL-020\nMAC Addresses: Not included\nUser Profile: 0"
+      ],
+      [
+        "p",
+        "Users: rookthekiss@example.invalid, lrs.silva01@example.invalid, treino03@example.invalid, treino04@example.invalid, treino05@example.invalid, treino06@example.invalid, treino07@example.invalid, treino08@example.invalid, treino09@example.invalid, treino10@example.invalid, treino11@example.invalid, treino12@example.invalid, treino13@example.invalid, treino14@example.invalid, treino15@example.invalid, treino16@example.invalid, treino17@example.invalid, treino18@example.invalid, treino19@example.invalid, treino20@example.invalid"
+      ],
+      [
+        "h",
+        "Device Attributes"
+      ],
+      [
+        "mono",
+        "Locale: pt-BR\nTimezone: America/Sao_Paulo\nModel: SIM-MODEL-020\nBrand: SIM-BRAND\nManufacturer: SIM-MANUFACTURER\nDevice Type: Android\nDevice Sub-type: Phone"
+      ],
+      [
+        "h",
+        "Export Scope"
+      ],
+      [
+        "p",
+        "This is a selected fictional training extract. Fields not included in this extract are not represented as absent from the source system. The identifiers shown with SIM are not real device identifiers."
+      ]
+    ],
+    "note": "Extrato didático baseado na estrutura de um arquivo original; todos os valores foram substituídos.",
+    "kind": "doc",
+    "platform": "Google",
+    "response_files": [
+      "imagens/A10B.png"
+    ]
+  },
+  {
+    "code": "A23",
+    "phase": 3,
+    "title": "Discord • retorno complementar dos envolvidos",
+    "sub": "Retorno fictício revisado",
+    "kind": "doc",
+    "platform": "Discord",
+    "rows": [
+      [
+        "mono",
+        "Request reference: SIM-LUA-001\nProduction date: 2026-10-23T15:00:00Z\nServer reference: SIM-DIS-S001"
+      ],
+      [
+        "h",
+        "CORVO"
+      ],
+      [
+        "mono",
+        "User ID: SIM-DIS-U201\nDisplay Name: CORVO\nEmail: contato.familia02@example.invalid\nAccess UTC: 2026-10-22T05:21:00Z\nIP: 198.51.100.61 | Source port: 51235 | TCP"
+      ],
+      [
+        "h",
+        "HADES"
+      ],
+      [
+        "mono",
+        "User ID: SIM-DIS-U301\nDisplay Name: HADES\nEmail: hades.v7@example.invalid\nAccess UTC: 2026-10-22T04:55:00Z\nIP: 198.51.100.72 | Source port: 51401 | TCP"
+      ],
+      [
+        "h",
+        "Zeta"
+      ],
+      [
+        "mono",
+        "User ID: SIM-DIS-U401\nDisplay Name: Zeta\nEmail: zeta.n7@example.invalid\nAccess UTC: 2026-10-22T05:40:00Z\nIP: 203.0.113.81 | Source port: 51402 | TCP"
+      ],
+      [
+        "h",
+        "Ghost"
+      ],
+      [
+        "mono",
+        "User ID: SIM-DIS-U501\nDisplay Name: Ghost\nEmail: ghost.v7@example.invalid\nAccess UTC: 2026-10-22T05:41:00Z\nIP: 203.0.113.82 | Source port: 51403 | TCP"
+      ],
+      [
+        "h",
+        "Oráculo"
+      ],
+      [
+        "mono",
+        "User ID: SIM-DIS-U601\nDisplay Name: Oráculo\nEmail: oraculo.n7@example.invalid\nAccess UTC: 2026-10-22T05:42:00Z\nIP: 203.0.113.83 | Source port: 51404 | TCP"
+      ],
+      [
+        "h",
+        "K9"
+      ],
+      [
+        "mono",
+        "User ID: SIM-DIS-U701\nDisplay Name: K9\nEmail: k9.v7@example.invalid\nAccess UTC: 2026-10-22T05:43:00Z\nIP: 203.0.113.84 | Source port: 51405 | TCP"
+      ],
+      [
+        "h",
+        "Nox"
+      ],
+      [
+        "mono",
+        "User ID: SIM-DIS-U801\nDisplay Name: Nox\nEmail: nox.v7@example.invalid\nAccess UTC: 2026-10-22T05:44:00Z\nIP: 203.0.113.85 | Source port: 51406 | TCP"
+      ],
+      [
+        "h",
+        "Vesper"
+      ],
+      [
+        "mono",
+        "User ID: SIM-DIS-U901\nDisplay Name: Vesper\nEmail: vesper.v7@example.invalid\nAccess UTC: 2026-10-22T05:45:00Z\nIP: 203.0.113.86 | Source port: 51407 | TCP"
+      ],
+      [
+        "h",
+        "Ícaro"
+      ],
+      [
+        "mono",
+        "User ID: SIM-DIS-U1001\nDisplay Name: Ícaro\nEmail: icaro.v7@example.invalid\nAccess UTC: 2026-10-22T05:46:00Z\nIP: 203.0.113.87 | Source port: 51408 | TCP"
+      ],
+      [
+        "p",
+        "This supplemental production covers nine additional account identifiers. Display name is not identity verification. No call content is supplied in this training production."
+      ],
+      [
+        "p",
+        "Fictional records. Identification of an account does not prove participation in a particular conduct."
+      ]
+    ],
+    "note": "SIMULADO. Registros gerados de base única para exercício.",
+    "response_files": [
+      "imagens/A23.png",
+      "imagens/A23_02.png"
+    ],
+    "canonical_refs": [
+      "CORVO",
+      "HADES",
+      "Zeta",
+      "Ghost",
+      "Oráculo",
+      "K9",
+      "Nox",
+      "Vesper",
+      "Ícaro"
+    ]
+  },
+  {
+    "code": "A24",
+    "phase": 4,
+    "title": "NetSul Fibra • conexão da nova conta ROOK",
+    "sub": "Retorno fictício revisado",
+    "kind": "doc",
+    "platform": "NetSul Fibra",
+    "rows": [
+      [
+        "mono",
+        "Procedimento: SIM-LUA-001\nReferência: SIM-DIS-PRO-002 / A15"
+      ],
+      [
+        "mono",
+        "IP: 203.0.113.46 | PORTA: 51310 | TCP\nINSTANTE UTC: 2026-11-12T12:40:00Z\nHORÁRIO LOCAL: 2026-11-12T09:40:00-03:00\nASSINATURA: SIM-NS-A010\nTITULAR: M. R. S. | DOC: SIM-DOC-T001"
+      ],
+      [
+        "p",
+        "O registro corresponde à mesma assinatura do retorno inicial, em instante distinto. A15 se refere à nova conta SIM-DIS-U102; SIM-DIS-U101 continua sendo o identificador da conta anterior. Não são duas pessoas identificadas apenas porque há dois IDs."
+      ],
+      [
+        "p",
+        "Titular cadastral não comprova, isoladamente, autoria de mensagens. Retorno integralmente fictício."
+      ]
+    ],
+    "note": "SIMULADO. Registros gerados de base única para exercício.",
+    "response_files": [
+      "imagens/A24.png"
+    ],
+    "canonical_refs": []
+  },
+  {
+    "code": "A25",
+    "phase": 3,
+    "title": "Metadados de coleta e cobertura dos apelidos",
+    "sub": "Retorno fictício revisado",
+    "kind": "doc",
+    "platform": "Polícia local",
+    "rows": [
+      [
+        "mono",
+        "Procedimento: SIM-LUA-001\nNota de coleta SIM-META-025"
+      ],
+      [
+        "p",
+        "Extrato fictício dos identificadores de conta associados às capturas. Os nomes exibidos devem ser ligados aos IDs estáveis; sem este vínculo, coincidência de apelidos não individualiza usuário."
+      ],
+      [
+        "h",
+        "ROOK"
+      ],
+      [
+        "mono",
+        "Discord: SIM-DIS-U101\nEmail de vínculo: rookthekiss@example.invalid"
+      ],
+      [
+        "p",
+        "Origem no cenário: A08 e A26. Situação: alvo de atribuição do roteiro."
+      ],
+      [
+        "h",
+        "CORVO"
+      ],
+      [
+        "mono",
+        "Discord: SIM-DIS-U201\nEmail de vínculo: contato.familia02@example.invalid"
+      ],
+      [
+        "p",
+        "Origem no cenário: A11, A23 e A26. Situação: alvo de atribuição do roteiro."
+      ],
+      [
+        "h",
+        "HADES"
+      ],
+      [
+        "mono",
+        "Discord: SIM-DIS-U301\nEmail de vínculo: hades.v7@example.invalid"
+      ],
+      [
+        "p",
+        "Origem no cenário: A02 Discord e A23; A14 é apenas declaração de hierarquia. Situação: alvo de atribuição do roteiro."
+      ],
+      [
+        "h",
+        "Zeta"
+      ],
+      [
+        "mono",
+        "Discord: SIM-DIS-U401\nEmail de vínculo: zeta.n7@example.invalid"
+      ],
+      [
+        "p",
+        "Origem no cenário: A04 Instagram; A06 e A07 Discord. Situação: conduta descrita no cenário."
+      ],
+      [
+        "h",
+        "Ghost"
+      ],
+      [
+        "mono",
+        "Discord: SIM-DIS-U501\nEmail de vínculo: ghost.v7@example.invalid"
+      ],
+      [
+        "p",
+        "Origem no cenário: A05, A06 e A07 Discord. Situação: conduta descrita no cenário."
+      ],
+      [
+        "h",
+        "Oráculo"
+      ],
+      [
+        "mono",
+        "Discord: SIM-DIS-U601\nEmail de vínculo: oraculo.n7@example.invalid"
+      ],
+      [
+        "p",
+        "Origem no cenário: A06 Discord. Situação: conduta descrita no cenário."
+      ],
+      [
+        "h",
+        "K9"
+      ],
+      [
+        "mono",
+        "Discord: SIM-DIS-U701\nEmail de vínculo: k9.v7@example.invalid"
+      ],
+      [
+        "p",
+        "Origem no cenário: A02, A06 e A07 Discord. Situação: conduta descrita no cenário."
+      ],
+      [
+        "h",
+        "Nox"
+      ],
+      [
+        "mono",
+        "Discord: SIM-DIS-U801\nEmail de vínculo: nox.v7@example.invalid"
+      ],
+      [
+        "p",
+        "Origem no cenário: inscrições A18/A22 e declaração A14; conta identificada em A23. Situação: somente citação em inscrições e hierarquia; conduta não individualizada."
+      ],
+      [
+        "h",
+        "Vesper"
+      ],
+      [
+        "mono",
+        "Discord: SIM-DIS-U901\nEmail de vínculo: vesper.v7@example.invalid"
+      ],
+      [
+        "p",
+        "Origem no cenário: inscrições A18/A22 e declaração A14; conta identificada em A23. Situação: somente citação em inscrições e hierarquia; conduta não individualizada."
+      ],
+      [
+        "h",
+        "Ícaro"
+      ],
+      [
+        "mono",
+        "Discord: SIM-DIS-U1001\nEmail de vínculo: icaro.v7@example.invalid"
+      ],
+      [
+        "p",
+        "Origem no cenário: inscrições A18/A22 e declaração A14; conta identificada em A23. Situação: somente citação em inscrições e hierarquia; conduta não individualizada."
+      ],
+      [
+        "h",
+        "Apelidos apenas citados, sem individualização"
+      ],
+      [
+        "p",
+        "Eclipse, Aster, Rune, Bruma, Talon, Quasar, Vulto, Cobalto. Não há retorno de conta, conexão ou cadastro civil para esses oito apelidos. Não classificar como autores identificados. A menção em A14 é informação sobre hierarquia declarada, não prova de conduta."
+      ]
+    ],
+    "note": "SIMULADO. Registros gerados de base única para exercício.",
+    "response_files": [
+      "imagens/A25.png",
+      "imagens/A25_02.png"
+    ],
+    "canonical_refs": [
+      "ROOK",
+      "CORVO",
+      "HADES",
+      "Zeta",
+      "Ghost",
+      "Oráculo",
+      "K9",
+      "Nox",
+      "Vesper",
+      "Ícaro"
+    ]
+  },
+  {
+    "code": "A26",
+    "phase": 3,
+    "title": "Rede de vídeos • perfis ROOK e CORVO",
+    "sub": "Retorno fictício revisado",
+    "kind": "doc",
+    "platform": "Rede de vídeos",
+    "rows": [
+      [
+        "mono",
+        "Request Reference: SIM-LUA-001\nService: fictional video-sharing platform"
+      ],
+      [
+        "h",
+        "ROOK"
+      ],
+      [
+        "mono",
+        "Account ID: SIM-VID-U101\nUsername: rook_unico\nRegistration email: rookthekiss@example.invalid\nDeclared Name: L. R. S."
+      ],
+      [
+        "p",
+        "Publicação fictícia de referência SIM-VID-P101: legenda e inscrição VÉRTICE. O registro é síntese do cenário, não fotografia de publicação real."
+      ],
+      [
+        "h",
+        "CORVO"
+      ],
+      [
+        "mono",
+        "Account ID: SIM-VID-U201\nUsername: corvo_retorno\nRegistration email: contato.familia02@example.invalid\nAvatar reference: SIM-AV-201"
+      ],
+      [
+        "p",
+        "Os dois arquivos de avatar didáticos anexados são idênticos byte a byte. O avatar não identifica pessoa por si só. SHA-256 de ambos: e110ce4ed51bf4104d254cebee60752c7942daf882557e663a57d82a59b7821f"
+      ],
+      [
+        "p",
+        "A alegação de ostentação de R$ 60 mil em criptoativos permanece apenas como relato do roteiro, sem saldo ou carteira verificados. Este extrato foi acrescentado como dado fictício para completar a cadeia de perfis."
+      ]
+    ],
+    "note": "SIMULADO. Registros gerados de base única para exercício.",
+    "response_files": [
+      "imagens/A26.png"
+    ],
+    "canonical_refs": [
+      "ROOK",
+      "CORVO"
+    ]
+  },
+  {
+    "code": "A17",
+    "phase": 2,
+    "title": "Personagem sozinha na chamada simulada",
+    "sub": "Imagem selecionada para o caderno do aluno",
+    "rows": [
+      [
+        "Descrição da imagem",
+        "Interface simulada do Discord com a personagem SOL sozinha no quadro de vídeo, com os olhos borrados. Ao lado aparecem os avatares identificados como Zeta, Ghost, Oráculo e K9. A imagem ilustra o ambiente da chamada e não permite concluir o que ocorreu antes ou depois."
+      ]
+    ],
+    "note": "SIMULADO. Composição didática; não é captura autêntica nem vestígio de caso real.",
+    "kind": "visual",
+    "platform": "Discord",
+    "source_attachment": "Chamada simulada em sala virtual(2).png"
+  },
+  {
+    "code": "A18",
+    "phase": 2,
+    "title": "Personagem com a placa de nomes",
+    "sub": "Imagem selecionada para o caderno do aluno",
+    "rows": [
+      [
+        "Descrição da imagem",
+        "A personagem SOL segura uma placa com os nomes NULL7 e VÉRTICE e os apelidos Zeta, Oráculo, Nox, Vesper, Ícaro, K9, Ghost, HADES, ROOK e CORVO, escritos em vermelho. Trata-se de tinta na encenação. A presença de um apelido na placa não comprova identidade civil, autoria ou participação em uma conduta."
+      ]
+    ],
+    "note": "SIMULADO. Composição didática; não é captura autêntica nem vestígio de caso real.",
+    "kind": "visual",
+    "platform": "Discord",
+    "source_attachment": "Cartaz vermelho na interface simulada-2.png"
+  },
+  {
+    "code": "A19",
+    "phase": 2,
+    "title": "Personagem e gato dormindo",
+    "sub": "Imagem selecionada para o caderno do aluno",
+    "rows": [
+      [
+        "Descrição da imagem",
+        "Cena simulada da personagem com as mãos no rosto e a cabeça inclinada, demonstrando tristeza, diante de um gato deitado e dormindo sobre a mesa. O animal está representado sem ferimentos. A expressão da personagem e a posição do gato não demonstram, isoladamente, a causa de qualquer acontecimento."
+      ]
+    ],
+    "note": "SIMULADO. Composição didática; não é captura autêntica nem vestígio de caso real.",
+    "kind": "visual",
+    "platform": "Discord",
+    "source_attachment": "Simulado_ menina melancólica e gato adormecido-1.png"
+  },
+  {
+    "code": "A20",
+    "phase": 4,
+    "title": "Quarto vazio com área censurada",
+    "sub": "Imagem selecionada para o caderno do aluno",
+    "rows": [
+      [
+        "Descrição da imagem",
+        "Representação do quarto vazio, com cama, mesa e cadeira. Uma tarja preta com a palavra CENSURADO cobre parte da parede como recurso editorial do exercício. Não há pessoa visível na cena. A tarja não permite inferir o que estaria atrás dela e não constitui informação pericial."
+      ]
+    ],
+    "note": "SIMULADO. Composição didática; não é captura autêntica nem vestígio de caso real.",
+    "kind": "visual",
+    "platform": "Cenário físico simulado",
+    "source_attachment": "Quarto vazio com retângulo censurado(1).png"
+  },
+  {
+    "code": "A21",
+    "phase": 4,
+    "title": "Exame do local pelas equipes policiais",
+    "sub": "Imagem selecionada para o caderno do aluno",
+    "rows": [
+      [
+        "Descrição da imagem",
+        "Encenação de profissionais da Polícia Científica e da Polícia Civil examinando o caderno aberto e a placa, enquanto duas pessoas representadas como os pais aparecem chorando ao fundo. Os profissionais estão lendo os materiais; as inscrições devem ser conferidas nas vistas A18 e A22, pois esta composição não é uma transcrição dos objetos. A cena ilustra o exame do local; não é registro de diligência real, laudo ou demonstração de cadeia de custódia."
+      ]
+    ],
+    "note": "SIMULADO. Composição didática; não é captura autêntica nem vestígio de caso real.",
+    "kind": "visual",
+    "platform": "Cenário físico simulado",
+    "source_attachment": "Peritos analisam caderno em cena simulada(1).png"
+  },
+  {
+    "code": "A22",
+    "phase": 4,
+    "title": "Evidência simulada do caderno com nomes",
+    "sub": "Imagem selecionada para o caderno do aluno",
+    "rows": [
+      [
+        "Descrição da imagem",
+        "Evidência simulada apresentada ao final do conjunto visual: caderno aberto com NULL7 e os apelidos Zeta, Oráculo, Nox, Vesper e Ícaro na página esquerda; VÉRTICE e os apelidos K9, Ghost, HADES, ROOK e CORVO na página direita. O material permite comparar inscrições com outros anexos. A autoria da escrita, a posse do objeto e o significado dos vínculos exigiriam verificação própria."
+      ]
+    ],
+    "note": "SIMULADO. Composição didática; não é captura autêntica nem vestígio de caso real.",
+    "kind": "visual",
+    "platform": "Cenário físico simulado",
+    "source_attachment": "Caderno simulado com listas manuscritas(1).png"
+  }
+]

@@ -1,0 +1,2 @@
+A24: Somente após consulta do novo registro recebido em A15.
+Entregar apenas os documentos da resposta, sem esta orientação. Não enviar a pasta reservada completa.

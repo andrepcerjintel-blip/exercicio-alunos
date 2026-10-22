@@ -1,0 +1,15 @@
+APELIDOS FICTÍCIOS DO EXERCÍCIO LUA
+
+NULL7 nas inscrições: Zeta, Oráculo, Nox, Vesper e Ícaro.
+VÉRTICE - hierarquia autodeclarada em A14:
+Donos: K9, Ghost e HADES.
+Subdonos: Eclipse e Aster.
+Administradores: Nox, Vesper, Ícaro e Rune.
+Expulsos: Bruma, Talon, Quasar, Vulto e Cobalto.
+Outros alvos do roteiro: ROOK e CORVO.
+
+Nox, Vesper e Ícaro aparecem nas inscrições NULL7 e na hierarquia declarada VÉRTICE. Esta sobreposição é parte fictícia do exercício e não resolve, por si, vínculo, migração ou autoria. Os alunos devem apontar a ambiguidade e pedir corroboração.
+
+Personagem ilustrada da chamada: SOL. A17 a A19 ilustram momentos fictícios da chamada; A20 mostra o quarto censurado; A21 representa o exame do local; A22 é o caderno com inscrições. Não contar imagens derivadas como fontes independentes.
+
+Os IDs técnicos SIM-DIS, SIM-TG e demais identificadores SIM foram mantidos como marcadores inválidos. Apenas códigos usados como nomes de pessoas foram substituídos.

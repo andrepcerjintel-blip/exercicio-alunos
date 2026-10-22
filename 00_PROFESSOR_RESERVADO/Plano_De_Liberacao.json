@@ -1,0 +1,60 @@
+[
+  {
+    "folder": "01_DENUNCIA_WHATSAPP",
+    "title": "Etapa 1 Denúncia recebida por WhatsApp",
+    "codes": [
+      "A01"
+    ],
+    "release": "Entregar na abertura. Aguardar as respostas do grupo antes de liberar o ZIP das provas. Não mostrar respostas-modelo do professor.",
+    "pages": 2
+  },
+  {
+    "folder": "02_PROVAS_INICIAIS_ALUNOS",
+    "title": "Etapa 2 Recebimento das provas e análise inicial",
+    "codes": [
+      "A02",
+      "A03",
+      "A04",
+      "A05",
+      "A06",
+      "A07",
+      "A14",
+      "A17",
+      "A18",
+      "A19",
+      "A20",
+      "A21",
+      "A22"
+    ],
+    "release": "Após os grupos responderem à etapa 1. Entregar Provas_Iniciais_Alunos.zip completo, simultaneamente a todos.",
+    "pages": 14
+  },
+  {
+    "folder": "03_PEDIDOS_E_DILIGENCIAS",
+    "title": "Etapa 3 Pedidos às plataformas e diligências",
+    "codes": [],
+    "release": "Após análise das provas iniciais. Os retornos ficam com o professor e só são liberados em resposta aos pedidos.",
+    "pages": 2
+  },
+  {
+    "folder": "04_ANALISE_DOS_RETORNOS",
+    "title": "Etapa 4 Análise dos retornos liberados pelo professor",
+    "codes": [],
+    "release": "Pode acompanhar a primeira resposta de aplicação. Entregar cada retorno separadamente, a partir da pasta reservada por plataforma.",
+    "pages": 1
+  },
+  {
+    "folder": "05_ATUALIZACAO_POSTERIOR",
+    "title": "Etapa 5 Nova informação e complementação",
+    "codes": [],
+    "release": "Somente depois das cadeias iniciais e do organograma. O proativo fica reservado na pasta Discord; a conexão complementar, na pasta NetSul.",
+    "pages": 1
+  },
+  {
+    "folder": "06_RELATORIO_FINAL",
+    "title": "Etapa 6 Relatório técnico e apresentação",
+    "codes": [],
+    "release": "Depois da atualização final e de sua análise; o gabarito permanece reservado até a devolutiva.",
+    "pages": 1
+  }
+]

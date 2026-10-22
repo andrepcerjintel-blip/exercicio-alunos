@@ -1,0 +1,2 @@
+ef9557771a94234276afcacae214494951726f5ef0f417c89fc2f30c0bbbb9d5  Caderno_Desta_Entrega.pdf
+f545843c56ea5ab272c2eabb688b84b04731097e4a42367697dd652ce46ea40c  verificar_integridade.py

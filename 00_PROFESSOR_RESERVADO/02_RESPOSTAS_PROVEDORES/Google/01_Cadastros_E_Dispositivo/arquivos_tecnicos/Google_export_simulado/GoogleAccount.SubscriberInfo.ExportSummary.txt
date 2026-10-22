@@ -1,0 +1,18 @@
+SIMULADO - MULTI ACCOUNT EXPORT
+Request reference: SIM-LUA-001
+Service: Google Account
+Resource: Subscriber Info
+End of date range: 2026-10-23T15:00:00Z
+
+rookthekiss@example.invalid [Email Address] -> SIM-GOO-A001 [Google Account ID]
+contato.familia02@example.invalid [Email Address] -> SIM-GOO-A002 [Google Account ID]
+hades.v7@example.invalid [Email Address] -> SIM-GOO-A003 [Google Account ID]
+zeta.n7@example.invalid [Email Address] -> SIM-GOO-A004 [Google Account ID]
+ghost.v7@example.invalid [Email Address] -> SIM-GOO-A005 [Google Account ID]
+oraculo.n7@example.invalid [Email Address] -> SIM-GOO-A006 [Google Account ID]
+k9.v7@example.invalid [Email Address] -> SIM-GOO-A007 [Google Account ID]
+nox.v7@example.invalid [Email Address] -> SIM-GOO-A008 [Google Account ID]
+vesper.v7@example.invalid [Email Address] -> SIM-GOO-A009 [Google Account ID]
+icaro.v7@example.invalid [Email Address] -> SIM-GOO-A010 [Google Account ID]
+
+SIMULADO

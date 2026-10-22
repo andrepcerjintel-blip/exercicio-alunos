@@ -1,0 +1,2 @@
+A09: Somente após os alunos formularem consultas de conexão com IP, porta, protocolo e instante.
+Entregar apenas os documentos da resposta, sem esta orientação. Não enviar a pasta reservada completa.
