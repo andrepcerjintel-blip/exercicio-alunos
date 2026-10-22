@@ -56,6 +56,10 @@ class Workflow(unittest.TestCase):
     self.assertEqual(post(student,'login',{'name':'Aluno Um','password':'pessoal-12345'}),200)
     self.assertEqual(state(student)['phase'],1)
     self.assertEqual(len(state(student)['deliveries']),1)
+    self.assertEqual(post(student,'submit',{'body':'Entrega sem hashes'},state(student)['csrf']),400)
+    for line in (app.ROOT/'02_PROVAS_INICIAIS_ALUNOS/SHA256.txt').read_text().splitlines():
+     value,name=line.split(maxsplit=1)
+     self.assertEqual(post(student,'hash',{'name':name,'sha256':value},state(student)['csrf']),200)
     self.assertEqual(post(student,'submit',{'body':'Entrega compartilhada'},state(student)['csrf']),200)
     self.assertEqual(len(state(a)['deliveries']),2)
     self.assertEqual(len(state(b)['deliveries']),1)
@@ -66,6 +70,10 @@ class Workflow(unittest.TestCase):
     self.assertEqual(state(newcomer)['phase'],0)
     # Complete the remaining phases, each requiring approval AND its own code.
     for phase in range(1,6):
+     if phase==1:
+      for line in (app.ROOT/'02_PROVAS_INICIAIS_ALUNOS/SHA256.txt').read_text().splitlines():
+       value,name=line.split(maxsplit=1)
+       self.assertEqual(post(a,'hash',{'name':name,'sha256':value},state(a)['csrf']),200)
      self.assertEqual(post(a,'submit',{'body':'Dossiê fase '+str(phase)},state(a)['csrf']),200)
      latest=state(a)['deliveries'][-1]
      self.assertEqual(post(t,'review',{'id':latest['id'],'status':'approved'},csrf),200)

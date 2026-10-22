@@ -1,0 +1,60 @@
+{
+  "status": "passed",
+  "catalog": 21,
+  "verified_files": 30,
+  "checks": [
+    "Fase 1: senha incorreta rejeitada",
+    "Fase 1: entrega aprovada e senha correta aceitas",
+    "SHA-256 calculado no navegador e conferido com o manifesto",
+    "Entrega da fase 2 bloqueada com hashes pendentes",
+    "Pasta completa: 18 hashes calculados no navegador e registrados sem enviar os arquivos",
+    "Fase 2: senha incorreta rejeitada",
+    "Fase 2: entrega aprovada e senha correta aceitas",
+    "Fase 3: senha incorreta rejeitada",
+    "Fase 3: entrega aprovada e senha correta aceitas",
+    "Resposta A08 liberada pela interface somente para Aurora; Reserva recebe HTTP 403",
+    "Fase 4: senha incorreta rejeitada",
+    "Fase 4: entrega aprovada e senha correta aceitas",
+    "Fase 5: senha incorreta rejeitada",
+    "Fase 5: entrega aprovada e senha correta aceitas",
+    "Fase 6: senha incorreta rejeitada",
+    "Fase 6: entrega aprovada e senha correta aceitas",
+    "Conclusão confirmada na fase 6; equipe Reserva permanece na fase 1",
+    "Chromium: nenhum erro JavaScript durante o percurso"
+  ],
+  "screenshots": [
+    {
+      "file": "01-denuncia.png",
+      "title": "Fase 1 · Denúncia recebida e abordagem à fonte"
+    },
+    {
+      "file": "02-preservacao.png",
+      "title": "Fase 2 · Pacote de provas e registro de integridade"
+    },
+    {
+      "file": "03-pedidos.png",
+      "title": "Fase 3 · Triagem e pedido ao provedor"
+    },
+    {
+      "file": "04-respostas.png",
+      "title": "Fase 4 · Resposta do Discord vinculada ao pedido"
+    },
+    {
+      "file": "07-instrutor.png",
+      "title": "Instrutor · Equipes, acervo e condução"
+    },
+    {
+      "file": "05-atualizacao.png",
+      "title": "Fase 5 · Atualização posterior liberada para a equipe"
+    },
+    {
+      "file": "06-relatorio.png",
+      "title": "Fase 6 · Dossiê e conclusão fundamentada"
+    },
+    {
+      "file": "08-conclusao.png",
+      "title": "Encerramento · Seis fases concluídas com senha"
+    }
+  ],
+  "note": "Banco temporário; não altera equipes e entregas reais. Entregas demonstrativas não são gabarito."
+}
