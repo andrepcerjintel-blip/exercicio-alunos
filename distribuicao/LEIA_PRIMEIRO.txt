@@ -1,0 +1,36 @@
+OPERAÇÃO LUA — PACOTE EXECUTÁVEL LOCAL
+
+Requisito: Python 3.12 ou superior instalado (Windows, macOS ou Linux).
+Este arquivo é uma aplicação Python portátil, não um .exe nativo do Windows.
+
+FORMA MAIS SIMPLES
+Execute o arquivo Operacao_LUA.pyz com Python. Ele verifica o conteúdo,
+prepara uma pasta local, integra o kit e abre o jogo no navegador.
+No Windows, use: py -3 Operacao_LUA.pyz
+No macOS/Linux, use: python3 Operacao_LUA.pyz
+
+Os arquivos ficam em sua pasta pessoal, dentro de OperacaoLUA/versão-do-pacote.
+O acesso inicial do instrutor é criado em .runtime/acesso-inicial.txt nessa pasta.
+O terminal informa a localização exata. Não compartilhe essa credencial.
+Mantenha o terminal aberto para usar o jogo; Ctrl+C encerra o servidor.
+
+ALTERNATIVA COM PASTA EXTRAÍDA
+Extraia o ZIP inteiro. No Windows, abra INICIAR_WINDOWS.cmd.
+No macOS/Linux, execute bash INICIAR_MAC_LINUX.sh.
+
+O pacote destina-se ao instrutor: contém os materiais completos e o gabarito.
+Não distribuir o pacote completo aos alunos. Pela aplicação, alunos só veem
+os materiais autorizados para sua equipe e fase.
+
+COMO TESTAR
+1. Entre como instrutor com a credencial local criada na primeira execução.
+2. Em outro perfil/janela privada do navegador, cadastre um aluno e equipe.
+3. A equipe recebe a denúncia, escreve a abordagem e envia a entrega.
+4. O instrutor aprova e emite a senha. A equipe informa a senha e avança.
+5. Na fase 2, baixe o pacote, extraia-o e registre a pasta de provas para
+   calcular e conferir os 18 hashes antes de enviar a entrega.
+6. Continue até o relatório. Cada passagem exige avaliação e senha.
+
+A validação jurídica é realizada pelo instrutor. O pacote funciona localmente
+para avaliação; não publica o jogo na internet. Os dados da equipe permanecem
+na pasta .runtime; preserve-a se quiser manter o progresso.
