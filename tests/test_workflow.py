@@ -1,88 +1,79 @@
-import unittest, tempfile, threading, json, urllib.request, urllib.error, http.cookiejar, sys
-from pathlib import Path
-sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
-import app
-class Workflow(unittest.TestCase):
- def test_team_progression(self):
-  with tempfile.TemporaryDirectory() as tmp:
-   app.DATA=Path(tmp);app.init()
-   server=app.ThreadingHTTPServer(('127.0.0.1',0),app.App)
-   threading.Thread(target=server.serve_forever,daemon=True).start()
-   url='http://127.0.0.1:'+str(server.server_port)
-   def client():return urllib.request.build_opener(urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()))
-   def post(client,path,data,csrf=''):
-    req=urllib.request.Request(url+'/api/'+path,json.dumps(data).encode(),headers={'Content-Type':'application/json','X-CSRF':csrf})
-    try:
-     with client.open(req) as r:return r.status
-    except urllib.error.HTTPError as e:return e.code
-   def state(c):return json.load(c.open(url+'/api/state'))
-   try:
-    t=client();pw=(app.DATA/'acesso-inicial.txt').read_text().split('Senha: ')[1].strip()
-    self.assertEqual(post(t,'login',{'name':'instrutor','password':pw}),200);csrf=state(t)['csrf']
-    for name in ['Alfa','Bravo']:self.assertEqual(post(t,'group',{'name':name,'password':'senha-teste-123'},csrf),200)
-    self.assertEqual(post(t,'advance',{},csrf),400)
-    a=client();b=client()
-    for c,name in [(a,'Alfa'),(b,'Bravo')]:
-     self.assertEqual(post(c,'login',{'name':name,'password':'senha-teste-123'}),200)
-     self.assertEqual(post(c,'submit',{'body':'Entrega '+name},state(c)['csrf']),200)
-    self.assertEqual(len(state(a)['deliveries']),1)
-    self.assertEqual(post(a,'advance',{},state(a)['csrf']),403)
-    self.assertEqual(post(t,'advance',{}),403)
-    def issue(team):
-     req=urllib.request.Request(url+'/api/gate',json.dumps({'team_id':team}).encode(),headers={'Content-Type':'application/json','X-CSRF':csrf})
-     return json.load(t.open(req))['code']
-    teams=state(t)['groups']
-    self.assertEqual(post(t,'gate',{'team_id':teams[0]['id']},csrf),400)
-    self.assertEqual(post(a,'unlock',{'code':'qualquer'},state(a)['csrf']),400)
-    ds=state(t)['deliveries']
-    self.assertEqual(post(t,'review',{'id':ds[0]['id'],'status':'approved'},csrf),200)
-    self.assertEqual(post(t,'advance',{},csrf),400)
-    self.assertEqual(state(a)['phase'],0)
-    old=issue(teams[0]['id']);code=issue(teams[0]['id'])
-    self.assertEqual(post(a,'unlock',{'code':old},state(a)['csrf']),400)
-    self.assertEqual(post(b,'unlock',{'code':code},state(b)['csrf']),400)
-    self.assertEqual(post(a,'unlock',{'code':code},state(a)['csrf']),200)
-    self.assertEqual(post(a,'unlock',{'code':code},state(a)['csrf']),400)
-    self.assertEqual(state(a)['phase'],1);self.assertEqual(state(b)['phase'],0)
-    self.assertEqual(post(t,'review',{'id':ds[1]['id'],'status':'approved'},csrf),200)
-    self.assertEqual(post(t,'advance',{},csrf),400)
-    code=issue(teams[1]['id'])
-    self.assertEqual(post(b,'unlock',{'code':'incorreta'},state(b)['csrf']),400)
-    self.assertEqual(post(b,'unlock',{'code':code},state(b)['csrf']),200)
-    self.assertEqual(state(a)['phase'],1);self.assertEqual(state(b)['phase'],1)
-    student=client()
-    self.assertEqual(post(student,'register',{'name':'Aluno Um','team':'Alfa','password':'pessoal-12345','team_code':'errado-12345'}),400)
-    self.assertEqual(post(student,'register',{'name':'Aluno Um','team':'Alfa','password':'pessoal-12345','team_code':'senha-teste-123'}),200)
-    self.assertEqual(post(student,'login',{'name':'Aluno Um','password':'pessoal-12345'}),200)
-    self.assertEqual(state(student)['phase'],1)
-    self.assertEqual(len(state(student)['deliveries']),1)
-    self.assertEqual(post(student,'submit',{'body':'Entrega sem hashes'},state(student)['csrf']),400)
-    for line in (app.ROOT/'02_PROVAS_INICIAIS_ALUNOS/SHA256.txt').read_text().splitlines():
-     value,name=line.split(maxsplit=1)
-     self.assertEqual(post(student,'hash',{'name':name,'sha256':value},state(student)['csrf']),200)
-    self.assertEqual(post(student,'submit',{'body':'Entrega compartilhada'},state(student)['csrf']),200)
-    self.assertEqual(len(state(a)['deliveries']),2)
-    self.assertEqual(len(state(b)['deliveries']),1)
-    self.assertEqual(post(t,'review',{'id':ds[0]['id'],'status':'approved'},csrf),400)
-    newcomer=client()
-    self.assertEqual(post(newcomer,'register',{'name':'Aluno Dois','team':'Charlie','password':'pessoal-12345','team_code':'equipe-12345'}),200)
-    self.assertEqual(post(newcomer,'login',{'name':'Aluno Dois','password':'pessoal-12345'}),200)
-    self.assertEqual(state(newcomer)['phase'],0)
-    # Complete the remaining phases, each requiring approval AND its own code.
-    for phase in range(1,6):
-     if phase==1:
-      for line in (app.ROOT/'02_PROVAS_INICIAIS_ALUNOS/SHA256.txt').read_text().splitlines():
-       value,name=line.split(maxsplit=1)
-       self.assertEqual(post(a,'hash',{'name':name,'sha256':value},state(a)['csrf']),200)
-     self.assertEqual(post(a,'submit',{'body':'Dossiê fase '+str(phase)},state(a)['csrf']),200)
-     latest=state(a)['deliveries'][-1]
-     self.assertEqual(post(t,'review',{'id':latest['id'],'status':'approved'},csrf),200)
-     self.assertEqual(state(a)['phase'],phase)
-     code=issue(teams[0]['id'])
-     self.assertEqual(post(a,'unlock',{'code':code},state(a)['csrf']),200)
-    self.assertTrue(state(a)['completed'])
-    self.assertEqual(state(a)['phase'],5)
-    self.assertEqual(post(a,'submit',{'body':'Outra'},state(a)['csrf']),400)
-    self.assertEqual(post(a,'unlock',{'code':code},state(a)['csrf']),400)
-   finally:server.shutdown();server.server_close()
-if __name__=='__main__':unittest.main()
+from support import PortalCase
+
+class WorkflowTests(PortalCase):
+ def test_student_cannot_approve_issue_codes_or_create_evaluator(self):
+  for path,data in [('review',{'id':1,'status':'approved'}),('gate',{'team_id':self.team(self.a)['id']}),('request-review',{'id':1,'status':'approved'}),('analysis-review',{'id':1,'status':'approved'}),('evaluator',{'name':'intruso','password':'senha-segura-123'}),('release',{'id':1})]:
+   self.post(self.a,path,data,403)
+  other=self.client();self.post(other,'login',{'name':'Alfa','password':'codigo-equipe-123'},401)
+  self.assertEqual(self.get(self.a,'/aluno')[0],200);self.assertEqual(self.get(self.teacher,'/professor')[0],200)
+ def test_nominal_delivery_and_password_inbox_are_team_scoped(self):
+  self.post(self.a,'submit',{'body':'Abordagem proposta pela Ana.'})
+  self.post(self.a2,'submit',{'body':'Abordagem revista por Bruno.'})
+  teacher=self.state(self.teacher);ds=teacher['deliveries']
+  self.assertEqual([d['student_name'] for d in ds],['Ana','Bruno']);self.assertEqual([d['name'] for d in ds],['Alfa','Alfa'])
+  self.post(self.teacher,'review',{'id':ds[0]['id'],'status':'approved'},400)
+  self.post(self.teacher,'review',{'id':ds[1]['id'],'status':'approved'})
+  code=self.post(self.teacher,'gate',{'team_id':self.team(self.a)['id']})['code']
+  self.assertEqual(self.state(self.a)['messages'][0]['code'],code);self.assertEqual(self.state(self.a2)['messages'][0]['code'],code)
+  self.assertEqual(self.state(self.b)['messages'],[])
+  self.post(self.a,'unlock',{'code':'incorreta'},400);self.post(self.a,'unlock',{'code':code})
+  self.assertEqual(self.state(self.a2)['phase'],1);self.assertEqual(self.state(self.b)['phase'],0);self.assertEqual(self.state(self.a)['messages'],[])
+ def test_new_delivery_invalidates_previously_sent_password(self):
+  self.post(self.a,'submit',{'body':'Primeira versão'})
+  d=self.state(self.a)['deliveries'][-1];self.post(self.teacher,'review',{'id':d['id'],'status':'approved'})
+  code=self.post(self.teacher,'gate',{'team_id':self.team(self.a)['id']})['code']
+  self.post(self.a2,'submit',{'body':'Nova versão'})
+  self.assertEqual(self.state(self.a)['messages'],[]);self.post(self.a,'unlock',{'code':code},400)
+ def test_platform_texts_are_reviewed_individually_by_named_evaluator(self):
+  self.advance(self.a);self.advance(self.a)
+  discord=self.request(self.a,'Discord','Texto de Ana ao Discord.')
+  google=self.request(self.a2,'Google','Texto de Bruno ao Google.')
+  self.assertEqual(self.state(self.teacher)['requests'][-1]['student_name'],'Bruno')
+  self.post(self.teacher,'evaluator',{'name':'Avaliador Um','password':'avaliador-senha-123'})
+  evaluator=self.client();self.post(evaluator,'login',{'name':'Avaliador Um','password':'avaliador-senha-123'})
+  self.post(evaluator,'evaluator',{'name':'Outro','password':'senha-outro-123'},403)
+  self.post(evaluator,'request-review',{'id':discord['id'],'status':'approved','feedback':'Discord aprovado.'})
+  self.post(evaluator,'request-review',{'id':google['id'],'status':'correction','feedback':'Delimite o período e justifique o escopo.'})
+  self.post(self.a,'submit',{'body':'Plano com dois pedidos.'})
+  d=self.state(self.a)['deliveries'][-1];self.post(self.teacher,'review',{'id':d['id'],'status':'approved'},400)
+  requests=self.state(self.a)['requests'];self.assertEqual(requests[-1]['reviewer_name'],'Avaliador Um');self.assertEqual(requests[-1]['feedback'],'Delimite o período e justifique o escopo.')
+  self.assertEqual(self.state(self.b)['requests'],[])
+ def test_identifier_analysis_requires_source_limits_action_and_approval(self):
+  for _ in range(3):self.advance(self.a)
+  request=self.state(self.a)['requests'][-1];self.release(self.a,'A08',request)
+  item=self.analysis(self.a)
+  self.assertEqual(item['student_name'],'Ana');self.assertEqual(item['team_name'],'Alfa');self.assertEqual(item['response_code'],'A08')
+  self.post(self.a,'submit',{'body':'Consolidação dos retornos.'})
+  d=self.state(self.a)['deliveries'][-1];self.post(self.teacher,'review',{'id':d['id'],'status':'approved'},400)
+  self.post(self.teacher,'analysis-review',{'id':item['id'],'status':'correction','feedback':'Explique melhor a diligência proposta.'})
+  self.assertEqual(self.state(self.a)['analyses'][0]['status'],'correction')
+  revised=self.analysis(self.a)
+  self.post(self.teacher,'analysis-review',{'id':item['id'],'status':'approved'},400)
+  self.post(self.teacher,'analysis-review',{'id':revised['id'],'status':'approved'})
+  self.pericia(self.a)
+  self.post(self.teacher,'review',{'id':d['id'],'status':'approved'})
+  code=self.post(self.teacher,'gate',{'team_id':self.team(self.a)['id']})['code'];self.post(self.a,'unlock',{'code':code})
+  self.assertEqual(self.state(self.a)['phase'],4)
+ def test_six_phases_complete_without_advancing_other_teams(self):
+  for phase in range(6):
+   self.assertEqual(self.state(self.a)['phase'],phase);self.advance(self.a)
+  self.assertTrue(self.state(self.a)['completed']);self.assertEqual(self.state(self.a)['phase'],5)
+  self.assertEqual(self.state(self.b)['phase'],0);self.assertEqual(self.state(self.b)['deliveries'],[])
+  self.post(self.a,'submit',{'body':'Tentativa após encerramento'},400)
+
+ def test_correction_can_change_identifier_without_leaving_stale_pending_item(self):
+  for _ in range(3):self.advance(self.a)
+  request=self.state(self.a)['requests'][-1];self.release(self.a,'A08',request)
+  original=self.analysis(self.a,value='identificador-digitado-incorretamente')
+  self.post(self.teacher,'analysis-review',{'id':original['id'],'status':'correction','feedback':'Corrija o identificador e preserve a origem.'})
+  data={k:original[k] for k in ['response_id','identifier_type','identifier_value','findings','limits','next_step','next_recipient','legal_basis']}
+  data.update(revision_of=original['id'],identifier_value='identificador-corrigido')
+  self.post(self.a2,'analysis',data)
+  revised=self.state(self.a)['analyses'][-1]
+  self.assertEqual(revised['student_name'],'Bruno')
+  self.assertEqual(self.state(self.a)['analyses'][0]['superseded_by'],revised['id'])
+  self.post(self.teacher,'analysis-review',{'id':original['id'],'status':'approved'},400)
+  self.post(self.teacher,'analysis-review',{'id':revised['id'],'status':'approved'})
+  self.pericia(self.a)
+  self.post(self.a,'submit',{'body':'Fichas corrigidas e diligências avaliadas.'})
+  d=self.state(self.a)['deliveries'][-1];self.post(self.teacher,'review',{'id':d['id'],'status':'approved'})

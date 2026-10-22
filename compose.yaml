@@ -1,0 +1,14 @@
+services:
+  portais:
+    build: .
+    ports:
+      - "${LUA_PORT:-8000}:8000"
+    environment:
+      LUA_DATA: /data
+      HOST: 0.0.0.0
+      PORT: "8000"
+    volumes:
+      - lua_dados:/data
+    restart: unless-stopped
+volumes:
+  lua_dados:

@@ -1,60 +1,75 @@
 {
   "status": "passed",
-  "catalog": 21,
+  "catalog": 23,
   "verified_files": 30,
   "checks": [
-    "Fase 1: senha incorreta rejeitada",
-    "Fase 1: entrega aprovada e senha correta aceitas",
-    "SHA-256 calculado no navegador e conferido com o manifesto",
-    "Entrega da fase 2 bloqueada com hashes pendentes",
-    "Pasta completa: 18 hashes calculados no navegador e registrados sem enviar os arquivos",
-    "Fase 2: senha incorreta rejeitada",
-    "Fase 2: entrega aprovada e senha correta aceitas",
-    "Fase 3: senha incorreta rejeitada",
-    "Fase 3: entrega aprovada e senha correta aceitas",
-    "Resposta A08 liberada pela interface somente para Aurora; Reserva recebe HTTP 403",
-    "Fase 4: senha incorreta rejeitada",
-    "Fase 4: entrega aprovada e senha correta aceitas",
-    "Fase 5: senha incorreta rejeitada",
-    "Fase 5: entrega aprovada e senha correta aceitas",
-    "Fase 6: senha incorreta rejeitada",
-    "Fase 6: entrega aprovada e senha correta aceitas",
-    "Conclusão confirmada na fase 6; equipe Reserva permanece na fase 1",
-    "Chromium: nenhum erro JavaScript durante o percurso"
+    "Aluno sem controles de aprovação ou emissão; tentativa direta de emitir senha retorna HTTP 403",
+    "Fase 1: senha incorreta rejeitada; senha enviada pelo professor somente à equipe aprovada",
+    "ZIP baixado pela interface contém 11 imagens sem manifesto; SHA-256 de cada imagem e do ZIP calculado externamente e enviado",
+    "Hash incorreto sinalizado; valores de referência não expostos no portal do aluno",
+    "Fase 2: senha incorreta rejeitada; senha enviada pelo professor somente à equipe aprovada",
+    "Avaliador recebeu textos distintos para Discord e Google, com aluno e equipe, e aprovou cada um pela interface",
+    "Fase 3: senha incorreta rejeitada; senha enviada pelo professor somente à equipe aprovada",
+    "Retorno liberado apenas após aprovação do pedido correspondente e somente à equipe Aurora",
+    "Ficha devolvida para correção, reaberta pela interface e reenviada com histórico preservado",
+    "Fase 4 bloqueada com análises pendentes; duas fichas por identificador avaliadas individualmente antes da passagem",
+    "A21 e A22 ausentes da entrega inicial e liberadas somente na tela de perícia após pedido aprovado e retorno A16",
+    "Perícia: hashes das duas imagens e do ZIP recebidos e análises avaliadas antes da passagem",
+    "Fase 4: senha incorreta rejeitada; senha enviada pelo professor somente à equipe aprovada",
+    "Fase 5: senha incorreta rejeitada; senha enviada pelo professor somente à equipe aprovada",
+    "Fase 6: senha incorreta rejeitada; senha enviada pelo professor somente à equipe aprovada",
+    "Seis fases concluídas; equipe Reserva permanece na fase 1 sem acesso aos trabalhos de Aurora",
+    "Nenhum erro JavaScript no percurso dos dois portais"
   ],
   "screenshots": [
     {
       "file": "01-denuncia.png",
-      "title": "Fase 1 · Denúncia recebida e abordagem à fonte"
+      "title": "Portal do aluno · Denúncia e entrega nominal"
     },
     {
       "file": "02-preservacao.png",
-      "title": "Fase 2 · Pacote de provas e registro de integridade"
+      "title": "Portal do aluno · Hashes das imagens e do ZIP"
+    },
+    {
+      "file": "09-pedidos-professor.png",
+      "title": "Professor · Textos por plataforma, aluno e equipe"
     },
     {
       "file": "03-pedidos.png",
-      "title": "Fase 3 · Triagem e pedido ao provedor"
+      "title": "Portal do aluno · Pedidos e devolutivas por provedor"
     },
     {
       "file": "04-respostas.png",
-      "title": "Fase 4 · Resposta do Discord vinculada ao pedido"
+      "title": "Fase 4 · Identificadores, limites e próximas diligências"
+    },
+    {
+      "file": "10-analises-professor.png",
+      "title": "Professor · Avaliação individual das análises"
     },
     {
       "file": "07-instrutor.png",
-      "title": "Instrutor · Equipes, acervo e condução"
+      "title": "Portal do professor · Equipes e envio de senhas"
+    },
+    {
+      "file": "11-pericia.png",
+      "title": "Fase 4 · Tela exclusiva de perícia e arrecadação"
+    },
+    {
+      "file": "12-pericia-professor.png",
+      "title": "Professor · Avaliação dos vestígios do local"
     },
     {
       "file": "05-atualizacao.png",
-      "title": "Fase 5 · Atualização posterior liberada para a equipe"
+      "title": "Fase 5 · Novo pedido e retorno após avaliação"
     },
     {
       "file": "06-relatorio.png",
-      "title": "Fase 6 · Dossiê e conclusão fundamentada"
+      "title": "Fase 6 · Entrega nominal do relatório"
     },
     {
       "file": "08-conclusao.png",
-      "title": "Encerramento · Seis fases concluídas com senha"
+      "title": "Encerramento · Seis fases concluídas pela equipe"
     }
   ],
-  "note": "Banco temporário; não altera equipes e entregas reais. Entregas demonstrativas não são gabarito."
+  "note": "Banco temporário; sem credenciais reais. Entregas demonstrativas não são gabaritos."
 }
